@@ -9,7 +9,7 @@ public static class Program
     static void Main(string [] args)
     {
  
-        if(args.Equals(""))
+        if(args.Length == 0)
         {
             CanvasImage image = new CanvasImage("tux.jpg");
             // Set the max width of the image.
@@ -17,7 +17,7 @@ public static class Program
             // Render the image to the console
             AnsiConsole.Write(image);
         }
-        if(args[0] = "OIP.jpg" + args[1])
+        if(args[0] == "OIP.jpg" + args[1])
         {
             CanvasImage image1 = new CanvasImage("OIP.jpg");
             // Set the max width of the image.
