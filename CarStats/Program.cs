@@ -2,6 +2,7 @@
 using Spectre.Console;
 using Bogus;
 using System.Security.Cryptography;
+using Bogus.DataSets;
 
 namespace CarStats
 {
@@ -16,11 +17,18 @@ namespace CarStats
             BarChart bc = new BarChart();
             //bc.AddItem("Ferrari",14);
 
+            string carbrand = Vehicle.Manufacturer();
+
             
             
-            bc.AddItem(faker,random);
+            
+            bc.AddItem(carbrand,random);
             Console.WriteLine(bc);
             
+        }
+        public class MyClass
+        {
+
         }
     }
 }
